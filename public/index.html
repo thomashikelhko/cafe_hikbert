@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Hikbert – Handmade with Love</title>
+  <meta name="description" content="Café Hikbert – a modern café serving handmade cakes, Kaiserschmarrn, and seasonal specialties in a cozy atmosphere." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========================================================
+       NAVIGATION
+  ======================================================== -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#hero" class="nav__logo">Café Hikbert</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#hours">Hours</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#reserve" class="btn btn--nav">Reserve a Table</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========================================================
+       HERO
+  ======================================================== -->
+  <section class="hero" id="hero">
+    <!-- PLACEHOLDER: Replace the gradient below with your own hero image.
+         Add your image to public/images/ and update the background-image
+         in public/css/styles.css inside the .hero rule. -->
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__tagline">Handmade with Love</p>
+      <h1 class="hero__title">Café Hikbert</h1>
+      <p class="hero__subtitle">Modern café · Handmade cakes · Kaiserschmarrn · Seasonal specialties</p>
+      <div class="hero__actions">
+        <a href="#menu" class="btn btn--primary">Explore Menu</a>
+        <a href="#reserve" class="btn btn--outline">Reserve a Table</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span>↓</span>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       ABOUT
+  ======================================================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__image-wrap">
+          <!-- PLACEHOLDER: Replace with your own café interior/exterior photo.
+               Recommended size: 800×600 px. Add to public/images/ and update src. -->
+          <div class="placeholder-img placeholder-img--tall" data-label="Add your café photo here">
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="40" cy="32" r="14" stroke="currentColor" stroke-width="2"/>
+              <path d="M14 68c0-14.36 11.64-26 26-26h0c14.36 0 26 11.64 26 26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="about__text">
+          <span class="section__label">Our Story</span>
+          <h2 class="section__title">A little corner of warmth &amp; taste</h2>
+          <!-- PLACEHOLDER: Replace the paragraph below with your own story. -->
+          <p>
+            Café Hikbert was born from a simple dream: to create a welcoming space where every bite tells a story.
+            From our signature Kaiserschmarrn to our seasonal handmade cakes, everything is crafted fresh daily with
+            love and the finest local ingredients.
+          </p>
+          <p>
+            <!-- ADD YOUR OWN TEXT HERE – describe your café's history, values, or what makes it special. -->
+            [Add your personal story here – where the café started, what inspires you, why you love baking …]
+          </p>
+          <a href="#menu" class="btn btn--primary btn--sm">See What We Bake</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       MENU
+  ======================================================== -->
+  <section class="section menu" id="menu">
+    <div class="container">
+      <span class="section__label">What We Serve</span>
+      <h2 class="section__title">Our Menu</h2>
+      <p class="section__subtitle">
+        <!-- PLACEHOLDER: Update this description to match your actual menu focus. -->
+        Fresh, seasonal, and always made by hand. Prices in €.
+      </p>
+
+      <div class="menu__tabs" role="tablist">
+        <button class="menu__tab menu__tab--active" role="tab" data-tab="cakes">Cakes &amp; Pastries</button>
+        <button class="menu__tab" role="tab" data-tab="mains">Hot Dishes</button>
+        <button class="menu__tab" role="tab" data-tab="drinks">Drinks</button>
+      </div>
+
+      <!-- CAKES & PASTRIES -->
+      <div class="menu__panel menu__panel--active" id="tab-cakes">
+        <div class="menu__grid">
+
+          <div class="menu__item menu__item--featured">
+            <!-- PLACEHOLDER: Replace with your own cake photo. -->
+            <div class="placeholder-img" data-label="Add cake photo">
+              <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="30" width="44" height="22" rx="3" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 30c0-8 4-14 22-14s22 6 22 14" stroke="currentColor" stroke-width="2"/>
+                <path d="M30 16V8M22 20l-4-8M38 20l4-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="menu__item-info">
+              <div class="menu__item-header">
+                <h3>Signature Chocolate Cake</h3>
+                <span class="menu__price">€5.80</span>
+              </div>
+              <p>Rich dark chocolate sponge, ganache, and hand-whipped cream.</p>
+              <!-- PLACEHOLDER: Replace name, description, and price with your own. -->
+            </div>
+          </div>
+
+          <div class="menu__item">
+            <div class="placeholder-img" data-label="Add cake photo">
+              <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="30" cy="38" rx="20" ry="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M10 38V28c0-5.52 8.95-10 20-10s20 4.48 20 10v10" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="menu__item-info">
+              <div class="menu__item-header">
+                <h3>Seasonal Fruit Tart</h3>
+                <span class="menu__price">€4.50</span>
+              </div>
+              <p>Crispy shortcrust pastry, vanilla custard, fresh seasonal fruits.</p>
+            </div>
+          </div>
+
+          <div class="menu__item">
+            <div class="placeholder-img" data-label="Add cake photo">
+              <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="12" y="28" width="36" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 34h36M20 28v-6a10 10 0 0 1 20 0v6" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="menu__item-info">
+              <div class="menu__item-header">
+                <h3>Cheesecake of the Day</h3>
+                <span class="menu__price">€4.90</span>
+              </div>
+              <p>Ask our staff for today's cheesecake creation.</p>
+            </div>
+          </div>
+
+          <div class="menu__item">
+            <div class="placeholder-img" data-label="Add pastry photo">
+              <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 45 Q30 20 45 45" stroke="currentColor" stroke-width="2" fill="none"/>
+                <ellipse cx="30" cy="45" rx="18" ry="5" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="menu__item-info">
+              <div class="menu__item-header">
+                <h3>Croissant</h3>
+                <span class="menu__price">€2.80</span>
+              </div>
+              <p>Buttery, flaky, freshly baked croissant – plain or filled.</p>
+            </div>
+          </div>
+
+          <!-- PLACEHOLDER: Add more cake/pastry items below this comment following the same pattern. -->
+
+        </div>
+      </div>
+
+      <!-- HOT DISHES -->
+      <div class="menu__panel" id="tab-mains">
+        <div class="menu__grid">
+
+          <div class="menu__item menu__item--featured">
+            <div class="placeholder-img" data-label="Add Kaiserschmarrn photo">
+              <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="30" cy="38" rx="24" ry="12" stroke="currentColor" stroke-width="2"/>
+                <path d="M14 32c2-8 6-12 16-12s14 4 16 12" stroke="currentColor" stroke-width="2"/>
+                <path d="M20 26l3-8M30 24v-8M40 26l-3-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="menu__item-info">
+              <div class="menu__item-header">
+                <h3>Kaiserschmarrn ★</h3>
+                <span class="menu__price">€9.50</span>
+              </div>
+              <p>
+                Our house specialty. Fluffy shredded pancake, caramelised and dusted with powdered sugar,
+                served with plum compote and apple sauce.
+              </p>
+            </div>
+          </div>
+
+          <div class="menu__item">
+            <div class="placeholder-img" data-label="Add dish photo">
+              <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="36" r="18" stroke="currentColor" stroke-width="2"/>
+                <path d="M22 30 Q30 24 38 30" stroke="currentColor" stroke-width="2"/>
+                <circle cx="30" cy="36" r="8" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 2"/>
+              </svg>
+            </div>
+            <div class="menu__item-info">
+              <div class="menu__item-header">
+                <h3>Pancakes with Berries</h3>
+                <span class="menu__price">€7.50</span>
+              </div>
+              <p>Stack of three fluffy pancakes with mixed fresh berries and maple syrup.</p>
+            </div>
+          </div>
+
+          <div class="menu__item">
+            <div class="placeholder-img" data-label="Add dish photo">
+              <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="20" width="40" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
+                <path d="M10 30h40" stroke="currentColor" stroke-width="2"/>
+                <path d="M22 20v-6a8 8 0 0 1 16 0v6" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="menu__item-info">
+              <div class="menu__item-header">
+                <h3>Avocado Toast</h3>
+                <span class="menu__price">€8.90</span>
+              </div>
+              <p>Sourdough toast, smashed avocado, poached egg, chilli flakes, and microgreens.</p>
+            </div>
+          </div>
+
+          <div class="menu__item">
+            <div class="placeholder-img" data-label="Add dish photo">
+              <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="30" cy="38" rx="20" ry="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 34c0-10 8-16 18-16s18 6 18 16" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="menu__item-info">
+              <div class="menu__item-header">
+                <h3>Seasonal Soup</h3>
+                <span class="menu__price">€6.50</span>
+              </div>
+              <p>Ask for today's homemade soup – served with fresh bread.</p>
+            </div>
+          </div>
+
+          <!-- PLACEHOLDER: Add more hot dish items below following the same pattern. -->
+
+        </div>
+      </div>
+
+      <!-- DRINKS -->
+      <div class="menu__panel" id="tab-drinks">
+        <div class="menu__grid">
+
+          <div class="menu__item">
+            <div class="placeholder-img" data-label="Add coffee photo">
+              <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 22h32l-4 22H18L14 22z" stroke="currentColor" stroke-width="2"/>
+                <path d="M46 28h4a6 6 0 0 1 0 12h-4" stroke="currentColor" stroke-width="2"/>
+                <path d="M22 14c0-4 4-6 4-10M30 14c0-4 4-6 4-10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="menu__item-info">
+              <div class="menu__item-header">
+                <h3>Specialty Coffee</h3>
+                <span class="menu__price">from €3.20</span>
+              </div>
+              <p>Espresso, Americano, Flat White, Cappuccino, Latte – single or double shot.</p>
+            </div>
+          </div>
+
+          <div class="menu__item">
+            <div class="placeholder-img" data-label="Add tea photo">
+              <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 24h28l-4 22H20L16 24z" stroke="currentColor" stroke-width="2"/>
+                <path d="M44 30h4a5 5 0 0 1 0 10h-4" stroke="currentColor" stroke-width="2"/>
+                <path d="M28 14v-6M22 16l-4-4M34 16l4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="menu__item-info">
+              <div class="menu__item-header">
+                <h3>Loose-Leaf Tea</h3>
+                <span class="menu__price">€3.50</span>
+              </div>
+              <p>A curated selection of herbal, green, and black teas from around the world.</p>
+            </div>
+          </div>
+
+          <div class="menu__item">
+            <div class="placeholder-img" data-label="Add drink photo">
+              <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 16h24l-6 32H24L18 16z" stroke="currentColor" stroke-width="2"/>
+                <path d="M22 16l2-8h12l2 8" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="menu__item-info">
+              <div class="menu__item-header">
+                <h3>Homemade Lemonade</h3>
+                <span class="menu__price">€4.50</span>
+              </div>
+              <p>Freshly squeezed lemon, mint, and sparkling water. Ask for seasonal varieties.</p>
+            </div>
+          </div>
+
+          <div class="menu__item">
+            <div class="placeholder-img" data-label="Add drink photo">
+              <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="16" y="18" width="28" height="30" rx="4" stroke="currentColor" stroke-width="2"/>
+                <path d="M22 18v-4a8 8 0 0 1 16 0v4" stroke="currentColor" stroke-width="2"/>
+                <path d="M22 30 Q30 26 38 30" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div class="menu__item-info">
+              <div class="menu__item-header">
+                <h3>Hot Chocolate</h3>
+                <span class="menu__price">€4.20</span>
+              </div>
+              <p>Rich Belgian chocolate, steamed milk, marshmallows on request.</p>
+            </div>
+          </div>
+
+          <!-- PLACEHOLDER: Add more drinks below following the same pattern. -->
+
+        </div>
+      </div>
+
+      <p class="menu__note">
+        ★ Chef's recommendation &nbsp;·&nbsp; Menu changes seasonally &nbsp;·&nbsp;
+        Please inform us of any allergies or dietary requirements.
+        <!-- PLACEHOLDER: Update this note with your own allergen / dietary information. -->
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       GALLERY
+  ======================================================== -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <span class="section__label">Visual Stories</span>
+      <h2 class="section__title">Our Gallery</h2>
+      <p class="section__subtitle">
+        <!-- PLACEHOLDER: Update caption after adding your own photos. -->
+        Add your own photos to <code>public/images/</code> and update the <code>src</code> attributes below.
+      </p>
+    </div>
+
+    <div class="gallery__grid">
+      <!-- PLACEHOLDER IMAGES (1-6): Replace each .placeholder-img div with an <img> tag.
+           Recommended: add your photos to public/images/ and use relative paths like images/my-photo.jpg
+           Ideal sizes: 800×600 px for landscape, 600×800 px for portrait. -->
+
+      <div class="gallery__item gallery__item--large">
+        <div class="placeholder-img placeholder-img--fill" data-label="Add hero gallery photo (800×600 recommended)">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="10" width="48" height="40" rx="3" stroke="currentColor" stroke-width="2"/>
+            <circle cx="20" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+            <path d="M6 38 l14-14 10 10 8-8 16 16" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="gallery__item">
+        <div class="placeholder-img placeholder-img--fill" data-label="Add café photo">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="10" width="48" height="40" rx="3" stroke="currentColor" stroke-width="2"/>
+            <circle cx="20" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+            <path d="M6 38 l14-14 10 10 8-8 16 16" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="gallery__item">
+        <div class="placeholder-img placeholder-img--fill" data-label="Add food photo">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="10" width="48" height="40" rx="3" stroke="currentColor" stroke-width="2"/>
+            <circle cx="20" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+            <path d="M6 38 l14-14 10 10 8-8 16 16" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="gallery__item gallery__item--tall">
+        <div class="placeholder-img placeholder-img--fill" data-label="Add portrait photo">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="10" width="48" height="40" rx="3" stroke="currentColor" stroke-width="2"/>
+            <circle cx="20" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+            <path d="M6 38 l14-14 10 10 8-8 16 16" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="gallery__item">
+        <div class="placeholder-img placeholder-img--fill" data-label="Add dessert photo">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="10" width="48" height="40" rx="3" stroke="currentColor" stroke-width="2"/>
+            <circle cx="20" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+            <path d="M6 38 l14-14 10 10 8-8 16 16" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="gallery__item">
+        <div class="placeholder-img placeholder-img--fill" data-label="Add atmosphere photo">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="10" width="48" height="40" rx="3" stroke="currentColor" stroke-width="2"/>
+            <circle cx="20" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+            <path d="M6 38 l14-14 10 10 8-8 16 16" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       OPENING HOURS
+  ======================================================== -->
+  <section class="section hours" id="hours">
+    <div class="container">
+      <div class="hours__grid">
+        <div class="hours__info">
+          <span class="section__label">When We're Open</span>
+          <h2 class="section__title">Opening Hours</h2>
+          <!-- PLACEHOLDER: Update hours below to match your actual opening times. -->
+          <table class="hours__table">
+            <tbody>
+              <tr>
+                <td>Monday</td>
+                <td>Closed</td>
+              </tr>
+              <tr>
+                <td>Tuesday – Friday</td>
+                <td>08:00 – 18:00</td>
+              </tr>
+              <tr class="hours__row--highlight">
+                <td>Saturday</td>
+                <td>09:00 – 20:00</td>
+              </tr>
+              <tr class="hours__row--highlight">
+                <td>Sunday</td>
+                <td>10:00 – 17:00</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="hours__note">
+            Kitchen closes 30 minutes before closing time.
+            <!-- PLACEHOLDER: Add your own special hours or holiday notes here. -->
+          </p>
+        </div>
+
+        <div class="hours__map">
+          <!-- PLACEHOLDER: Replace with an actual Google Maps embed or your address details. -->
+          <div class="placeholder-img placeholder-img--map" data-label="Paste your Google Maps embed here">
+            <div class="hours__address">
+              <p>📍 <!-- PLACEHOLDER: Your Street Address --></p>
+              <p>Café Hikbert · [City, Postal Code]</p>
+              <p>📞 <!-- PLACEHOLDER: Your Phone Number --></p>
+              <p>✉️ <!-- PLACEHOLDER: Your Email Address --></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       EVENTS
+  ======================================================== -->
+  <section class="section events" id="events">
+    <div class="container">
+      <span class="section__label">What's On</span>
+      <h2 class="section__title">Upcoming Events</h2>
+      <p class="section__subtitle">
+        Join us for special evenings, workshops, and seasonal celebrations.
+      </p>
+
+      <div class="events__grid" id="eventsGrid">
+
+        <!-- EVENT CARD 1 – PLACEHOLDER -->
+        <article class="event-card">
+          <div class="event-card__date">
+            <span class="event-card__day">15</span><!-- PLACEHOLDER: Replace with day number -->
+            <span class="event-card__month">APR</span><!-- PLACEHOLDER: Replace with month abbreviation -->
+          </div>
+          <div class="event-card__body">
+            <h3 class="event-card__title">
+              <!-- PLACEHOLDER: Add your event title -->
+              Cake Baking Workshop
+            </h3>
+            <p class="event-card__meta">🕖 18:00 – 21:00 &nbsp;|&nbsp; Limited to 12 guests</p>
+            <p class="event-card__desc">
+              <!-- PLACEHOLDER: Describe your event – what guests can expect, how to register, price, etc. -->
+              Join our head baker for an evening of hands-on cake decorating. All skill levels welcome.
+              [Update date, time, details and price.]
+            </p>
+            <a href="#reserve" class="btn btn--primary btn--sm">Book Your Spot</a>
+          </div>
+        </article>
+
+        <!-- EVENT CARD 2 – PLACEHOLDER -->
+        <article class="event-card">
+          <div class="event-card__date">
+            <span class="event-card__day">27</span><!-- PLACEHOLDER: Replace with day number -->
+            <span class="event-card__month">APR</span><!-- PLACEHOLDER: Replace with month abbreviation -->
+          </div>
+          <div class="event-card__body">
+            <h3 class="event-card__title">
+              <!-- PLACEHOLDER: Add your event title -->
+              Sunday Jazz Brunch
+            </h3>
+            <p class="event-card__meta">🕙 10:00 – 14:00 &nbsp;|&nbsp; Walk-ins welcome</p>
+            <p class="event-card__desc">
+              <!-- PLACEHOLDER: Describe this event. -->
+              Live jazz, Kaiserschmarrn, and freshly brewed specialty coffee every last Sunday of the month.
+              [Update date, time, and details.]
+            </p>
+            <a href="#reserve" class="btn btn--primary btn--sm">Reserve a Table</a>
+          </div>
+        </article>
+
+        <!-- EVENT CARD 3 – PLACEHOLDER -->
+        <article class="event-card">
+          <div class="event-card__date">
+            <span class="event-card__day">10</span><!-- PLACEHOLDER: Replace with day number -->
+            <span class="event-card__month">MAY</span><!-- PLACEHOLDER: Replace with month abbreviation -->
+          </div>
+          <div class="event-card__body">
+            <h3 class="event-card__title">
+              <!-- PLACEHOLDER: Add your event title -->
+              Seasonal Tasting Evening
+            </h3>
+            <p class="event-card__meta">🕖 19:00 – 22:00 &nbsp;|&nbsp; By reservation</p>
+            <p class="event-card__desc">
+              <!-- PLACEHOLDER: Describe this event. -->
+              A curated tasting menu of our latest seasonal creations. Wine pairing available on request.
+              [Update date, time, price, and details.]
+            </p>
+            <a href="#reserve" class="btn btn--primary btn--sm">Reserve Now</a>
+          </div>
+        </article>
+
+        <!-- PLACEHOLDER: Add more event cards by copying the <article class="event-card"> block above. -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       RESERVATION
+  ======================================================== -->
+  <section class="section reserve" id="reserve">
+    <div class="container">
+      <span class="section__label">Book a Table</span>
+      <h2 class="section__title">Make a Reservation</h2>
+      <p class="section__subtitle">We'd love to welcome you. Fill in the form below and we'll confirm your booking.</p>
+
+      <div class="reserve__grid">
+        <form class="reserve__form" id="reservationForm" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="res-name">Full Name <span class="req">*</span></label>
+              <input type="text" id="res-name" name="name" placeholder="Jane Doe" required />
+            </div>
+            <div class="form__group">
+              <label for="res-email">Email <span class="req">*</span></label>
+              <input type="email" id="res-email" name="email" placeholder="jane@example.com" required />
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label for="res-phone">Phone</label>
+              <input type="tel" id="res-phone" name="phone" placeholder="+43 …" />
+            </div>
+            <div class="form__group">
+              <label for="res-guests">Number of Guests <span class="req">*</span></label>
+              <select id="res-guests" name="guests" required>
+                <option value="">Select …</option>
+                <option value="1">1 person</option>
+                <option value="2">2 people</option>
+                <option value="3">3 people</option>
+                <option value="4">4 people</option>
+                <option value="5">5 people</option>
+                <option value="6">6 people</option>
+                <option value="7">7 people</option>
+                <option value="8">8+ people (please call us)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label for="res-date">Date <span class="req">*</span></label>
+              <input type="date" id="res-date" name="date" required />
+            </div>
+            <div class="form__group">
+              <label for="res-time">Time <span class="req">*</span></label>
+              <select id="res-time" name="time" required>
+                <option value="">Select …</option>
+                <option value="08:00">08:00</option>
+                <option value="08:30">08:30</option>
+                <option value="09:00">09:00</option>
+                <option value="09:30">09:30</option>
+                <option value="10:00">10:00</option>
+                <option value="10:30">10:30</option>
+                <option value="11:00">11:00</option>
+                <option value="11:30">11:30</option>
+                <option value="12:00">12:00</option>
+                <option value="12:30">12:30</option>
+                <option value="13:00">13:00</option>
+                <option value="13:30">13:30</option>
+                <option value="14:00">14:00</option>
+                <option value="14:30">14:30</option>
+                <option value="15:00">15:00</option>
+                <option value="15:30">15:30</option>
+                <option value="16:00">16:00</option>
+                <option value="16:30">16:30</option>
+                <option value="17:00">17:00</option>
+                <option value="17:30">17:30</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label for="res-notes">Special Requests / Notes</label>
+            <textarea id="res-notes" name="notes" rows="4" placeholder="Allergies, dietary requirements, occasion …"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full" id="reserveBtn">
+            Confirm Reservation
+          </button>
+
+          <div class="form__message" id="formMessage" role="alert" aria-live="polite"></div>
+        </form>
+
+        <div class="reserve__info">
+          <div class="reserve__tip">
+            <h3>Good to Know</h3>
+            <ul>
+              <li>Reservations are held for <strong>15 minutes</strong> past the booking time.</li>
+              <li>For groups of <strong>8 or more</strong>, please call us directly.</li>
+              <li>A confirmation email will be sent to your inbox.</li>
+              <!-- PLACEHOLDER: Add your own booking policy notes here. -->
+            </ul>
+          </div>
+
+          <div class="reserve__contact">
+            <h3>Contact Us Directly</h3>
+            <p>📞 <!-- PLACEHOLDER: Your Phone Number --></p>
+            <p>✉️ <!-- PLACEHOLDER: Your Email Address --></p>
+            <p>📍 <!-- PLACEHOLDER: Your Address --></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       FOOTER
+  ======================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3 class="footer__logo">Café Hikbert</h3>
+          <p>Handmade with love, served with care.</p>
+          <!-- PLACEHOLDER: Add your own tagline or short description. -->
+        </div>
+
+        <div class="footer__links">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#hours">Hours</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#reserve">Reservations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__social">
+          <h4>Follow Us</h4>
+          <!-- PLACEHOLDER: Replace # with your actual social media URLs. -->
+          <ul>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__hours">
+          <h4>Opening Hours</h4>
+          <p>Mon: Closed</p>
+          <p>Tue–Fri: 08:00–18:00</p>
+          <p>Sat: 09:00–20:00</p>
+          <p>Sun: 10:00–17:00</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>
+          &copy; <span id="year"></span> Café Hikbert &nbsp;·&nbsp;
+          <!-- PLACEHOLDER: Add your legal links (Impressum, Privacy Policy, etc.) -->
+          <a href="#">Impressum</a> &nbsp;·&nbsp;
+          <a href="#">Privacy Policy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
